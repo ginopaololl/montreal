@@ -5,85 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="condominios, edificios, construcotras, vivienda, urbanizacion, hogar">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Montreal</title>
-    <link rel="shortcut icon" href="img/icono.jpg" type="image/x-icon">        
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/icono.jpg" type="image/x-icon"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body align="center">        
-    <!--Esta es la seccion del encabezado de mi página-->
-    <header>
-        <h1>Montreal</h1>
-        <!--img src="img/logo.jpg" alt="logo" width="150" height="150"-->
-        <!--Este es el menú de mi página-->
-        <nav>
-            <ul>
-                <li><a href="#introduccion">Inicio</a></li>
-                <li><a href="#articulos">Artículos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>            
-        </nav>
-    </header>
-    <main>
-        <!--Esta es mi sección de introductoria-->
-        <section id="introduccion" >
-            <h2>¡Bienvenido!</h2>
-            <p align="justify">Montreal es una empresa de profesionales con la experiencia en las fases 
-                de construcción residenciales y empresariales. Con un estudio previo ante 
-                la ubicación, materiales que conlleven a una planificación comodidad y 
-                seguridad de la inversión en cada familia peruana, clientes y empresarios.</p>
-            <img src="img/condominio.jpg" alt="condominio" width="200" height="300">
-            <img src="img/proyecto2.jpg" alt="proyecto2" width="200" height="300">
-            <img src="img/proyecto3.jpg" alt="proyecto3" width="200" height="300">
-        </section>
-        <!--Esta es mi sección de artículos-->
-        <section id="articulos">
-            <h2>Artículos Recientes</h2>
-            <article>
-                <h3>¿Cuál es la mejor opción para comprar un departamento nuevo?</h3>
-                <p align="justify">Encontrar departamentos nuevos en venta en Lima puede llegar a ser todo un desafío, 
-                    pues si bien el mercado inmobiliario de la ciudad se ha estado expandiendo durante los 
-                    últimos años, a veces es difícil tener que competir con todo el mundo para encontrar la 
-                    oferta que mejor se adapta a tus necesidades.</p>
-                <a href="https://www.urbanaperu.com.pe/blog/cual-es-la-mejor-opcion-para-comprar-un-departamento-nuevo/">Leer más</a>
-            </article>
-            <article>
-                <h3>¿Airbnb sigue siendo un buen negocio en Lima?</h3>
-                <p align="justify">Desde su llegada a Lima, Airbnb ha revolucionado el mercado de hospedaje, brindando nuevas 
-                    oportunidades a propietarios e inversores en  bienes raíces. Sin embargo, con la creciente 
-                    competencia, regulaciones más estrictas y cambios en las preferencias de los viajeros, muchos 
-                    se preguntan si seguir invirtiendo en Airbnb en Lima sigue siendo una buena opción. 
-                    En este artículo, analizaremos el panorama actual del negocio en la capital peruana, sus 
-                    ventajas, desafíos y perspectivas futuras.</p>
-                <a href="https://descubrelima.pe/airbnb-sigue-siendo-un-buen-negocio-en-lima/">Leer más</a>
-            </article>
-        </section>
-        <!--Esta es mi sección de Contacto-->
-        <section id="contacto">
-            <h2>Formulario de Contacto</h2>
-            <form action="#" method="post">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" required>
+<body>
+    <div class="all-content">    
+        <!--Esta es la seccion del encabezado de mi página-->
+        <header>      
+            <!--Este es el menú de mi página-->
+            <nav class="navbar navbar-expand-lg" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" id="logo"><img src="img/logo.jpg" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">                    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nosotros">Nosotros</a>
+                            </li>                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#proyectos">Proyectos Entregados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#cliente">Atencion al Cliente</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>                            
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> 
+                    </div>
+                </div>           
+            </nav>
+        </header>
+        <main>
+            <!--Esta es mi sección de introductoria-->
+            <section id="inicio" >
+                <div class="content">
+                    <h2>Donde imaginas tu futuro </h2>
+                    <p>Este podria ser tu nuevo departamento, has realidad tu sueño.
+                    </p>                    
                 </div>
-                <br>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+            </section>
+
+            <section id="nosotros" >
+                <div class="container">
+                    <div class="heading">Nosotros</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="/img/imagen5.jpg" alt="">                               
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Expertos en lo que hacemos. . .</h3>
+                            <p>Montreal es una empresa de profesionales con la experiencia en las fases 
+                                de construcción residenciales y empresariales.<br><br> Con un estudio previo ante 
+                                la ubicación, materiales que conlleven a una planificación, comodidad y 
+                                seguridad de la inversión en cada familia peruana, clientes y empresarios.
+                            </p>
+                            <a href="#contacto">
+                                <button id="nosotros-btn">Contáctanos</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+            </section>
+
+            <section id="proyectos" >
+                <div class="">
+                    <h2>Nosotros</h2>
+                    <p>Montreal es una empresa de profesionales con la experiencia en las fases 
+                        de construcción residenciales y empresariales.<br> Con un estudio previo ante 
+                        la ubicación, materiales que conlleven a una planificación comodidad y 
+                        seguridad de la inversión en cada familia peruana, clientes y empresarios.
+                    </p>
+                    <!--img src="img/condominio.jpg" alt="condominio" width="200" height="300">
+                    <img src="img/proyecto2.jpg" alt="proyecto2" width="200" height="300">
+                    <img src="img/proyecto3.jpg" alt="proyecto3" width="200" height="300"-->
                 </div>
-                <br>
-                <div>
-                    <input type="submit" name="" value="Enviar"></input>
-                </div>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Todos los derechos reservados | Sigueme en <a href="https://www.facebook.com/">facebook</a>
-        | <a href="https://x.com">x</a> </p>        
-    </footer>
+            </section>
+
+            <!--Esta es mi sección de artículos-->
+            <section id="cliente">
+                <h2>Articulos Recientes</h2>
+                <article>
+                    <h3>¿Cuál es la mejor opción para comprar un departamento nuevo?</h3>
+                    <p align="justify">Encontrar departamentos nuevos en venta en Lima puede llegar a ser todo un desafío, 
+                        pues si bien el mercado inmobiliario de la ciudad se ha estado expandiendo durante los 
+                        últimos años, a veces es difícil tener que competir con todo el mundo para encontrar la 
+                        oferta que mejor se adapta a tus necesidades.</p>
+                    <a href="https://www.urbanaperu.com.pe/blog/cual-es-la-mejor-opcion-para-comprar-un-departamento-nuevo/">Leer más</a>
+                </article>
+                <article>
+                    <h3>¿Airbnb sigue siendo un buen negocio en Lima?</h3>
+                    <p align="justify">Desde su llegada a Lima, Airbnb ha revolucionado el mercado de hospedaje, brindando nuevas 
+                        oportunidades a propietarios e inversores en  bienes raíces. Sin embargo, con la creciente 
+                        competencia, regulaciones más estrictas y cambios en las preferencias de los viajeros, muchos 
+                        se preguntan si seguir invirtiendo en Airbnb en Lima sigue siendo una buena opción. 
+                        En este artículo, analizaremos el panorama actual del negocio en la capital peruana, sus 
+                        ventajas, desafíos y perspectivas futuras.</p>
+                    <a href="https://descubrelima.pe/airbnb-sigue-siendo-un-buen-negocio-en-lima/">Leer más</a>
+                </article>
+            </section>
+
+            <!--Esta es mi sección de Contacto-->
+            <section id="contacto">
+                <h2>Formulario de Contacto</h2>
+                <form action="#" method="post">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" name="" value="Enviar"></input>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy; 2025 Todos los derechos reservados | Sigueme en <a href="https://www.facebook.com/">facebook</a>
+            | <a href="https://x.com">x</a> </p>        
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </div>
 </body>
 </html>
