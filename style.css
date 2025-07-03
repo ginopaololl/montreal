@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+.all-content{
+    background: #f2f7f3;
+}
+html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+    background: #b2774c;
+    border-radius: 10px;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+#navbar{
+    background-color: #b2774c;
+}
+#logo img{
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 40px;
+}
+.navbar-nav{
+    margin-left: 50px;
+}
+.nav-item .nav-link{
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+    background: #f7f5f2;
+    border-radius: 5px;
+    color: black;
+}
+#navbar form button{
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+#inicio{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./img/caratula.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+}
+#inicio .content{
+    padding-top: 20px;
+    margin-left: 56px;
+}
+#inicio .content h2{
+    font-size: 50px;
+    color: white;
+}
+#inicio .content p{
+    margin-top: 10px;
+    color: white;
+}
+
+#nosotros{
+    width: 100%;
+    height: 100vh;
+}
+#nosotros .container{
+    padding-top: 70px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #b2744c;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#nosotros .card{
+    border-radius: 10px;
+    height: 350px;
+}
+#nosotros .card img{
+    border-radius: 10px; 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+#nosotros-btn{
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid #b2774c;
+    color: #b2744c;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#nosotros-btn:hover{
+    background-color: #b2744c;
+    color: white;
+}
+
