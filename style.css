@@ -366,3 +366,33 @@ html {
 #articulo3{
     padding-top: 50px;
 }
+#proyecto1-img{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./img/imagen10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+}
+#proyecto2-img{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./img/imagen11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+}
+#proyecto3-img{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./img/imagen9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+}
+.parrafo1-1 span{    
+    font-weight: bold;
+}
+.parrafo2-1 span{
+    font-weight: bold;
+}
